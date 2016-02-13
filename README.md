@@ -31,6 +31,7 @@ Files:
 todo:
 0. use more native types/APIS
 1. reduce hard coded path/file names
+2. valid input and return values, handle corner cases
 
 todo-future:
 1. multithread
