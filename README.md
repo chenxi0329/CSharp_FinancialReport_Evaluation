@@ -13,7 +13,7 @@ Utility Class:
 		Method farmReport 
 			farm IS,BS,CF and save whatever we get √
 		Method parseRawReport 
-			delete invalid reports, parse reports to readable format
+			delete invalid reports√, parse reports to readable format
 
 	class EvaluateReport
 		CalculateRatio
@@ -32,7 +32,9 @@ todo:
 0. use more native types/APIS
 1. reduce hard coded path/file names
 2. valid input and return values, handle corner cases
+3. free resources
 
 todo-future:
 1. multithread
 2. XBRL, python
+
