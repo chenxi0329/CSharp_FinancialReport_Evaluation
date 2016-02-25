@@ -17,7 +17,7 @@ namespace FinancialReport_Evaluation
         static void Main(string[] args)
         {
             
-            String tickerPath = @"e:\FRE\ticker.test.txt";
+            String tickerPath = @"d:\FRE\ticker.txt";
             NewReport gatherFeb12 = new NewReport(tickerPath);
             gatherFeb12.farmReport();
             gatherFeb12.parseRawReport();
@@ -26,9 +26,9 @@ namespace FinancialReport_Evaluation
 
     class NewReport
     {
+        String reportPath = @"d:\FRE\FR\";
         bool debugFlag = true;
         String tickerPath = "";
-        String reportPath = @"e:\ticker\test\";
         public NewReport(String tickerPath)
         {
             this.tickerPath = tickerPath;
@@ -52,7 +52,6 @@ namespace FinancialReport_Evaluation
                 }
             }
             Console.WriteLine("Removing invalid reports");
-            Console.ReadLine();
             removeInvalidReports();
             Console.ReadLine();
         }
